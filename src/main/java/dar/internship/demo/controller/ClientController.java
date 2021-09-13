@@ -25,7 +25,7 @@ public class ClientController {
         return clientService.update(clientDto);
     }
 
-    @GetMapping("/findById")
+    @GetMapping("/{id}")
     public ClientDto findById(@PathVariable Long id){
         return clientService.findById(id);
     }
