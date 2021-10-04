@@ -39,6 +39,7 @@ public class ClientController {
         return clientService.findAll();
     }
 
+
     @GetMapping("/check/openFeign/AllMails")
     public List<MailDto> findAllMails()
     {
